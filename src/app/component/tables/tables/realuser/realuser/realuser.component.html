@@ -1,0 +1,56 @@
+<div class="container d-flex ">
+	<div class="card mt-3 " style="width:1140px ;border:0px">
+		<div class="input-group mb-3 mt-5 ml-g">
+			<input type="text" class="form-control"[(ngModel)]="term" >
+			<div class="input-group-append"><button class="btn btn-primary"><i class="fas fa-search"></i></button></div>
+		</div>
+		<span class="text mb-4 mt-3 ml-3"> user data</span>
+    <div class="d-flex flex-row justify-content-between mb-3">
+			<div class="d-flex flex-column p-3 justify-content-center" style="width:100% ;">
+        <div class="card shadow-2-strong" style="background-color: #f5f7fa62; width: 100%">
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-borderless mb-0">
+                <thead>
+                  <tr>
+
+                    <th scope="col">ID</th>
+                    <th scope="col">USERS</th>
+                    <th scope="col">COUNTRY</th>
+                    <th scope="col">AGE</th>
+                  
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of user | filter: term ,let i=index" >
+
+                    <td>{{i+1}}</td>
+                    <td>{{item.userName}}</td>
+                    <td>{{item.userEmail}}</td>
+                    <td>{{item.userAge}}</td>
+
+                    
+                    
+                  </tr>
+                  <!-- <tr>
+                    <th scope="row" *ngFor="
+                    let data of arrayOfDigits | paginate: { itemsPerPage: 1, currentPage: pages }"></th>
+                    <td colspan="1"></td>
+                    <td colspan="6">   <pagination-controls (click)="pageid(pages)" (pageChange)="pages = $event"></pagination-controls>
+                    </td>
+                  </tr> -->
+                </tbody>
+                
+                
+              </table>
+            </div>
+          </div>
+        </div>
+        
+			</div>
+
+		</div>
+
+	</div>
+</div>

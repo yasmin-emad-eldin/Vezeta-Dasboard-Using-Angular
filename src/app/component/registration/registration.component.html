@@ -1,0 +1,125 @@
+<div class="container-fluid">
+  <div class="mainRegCont row">
+    <div class="RegContainer col-lg-6 col-sm-12">
+      <h1 style="position: relative; top:10%">Admin Registration</h1>
+      <form action="" [formGroup]="registerForm" class=" d-flex  flex-column ">
+        <!-- Name input -->
+        <input
+          class="form-control input"
+          type="text"
+          placeholder="Name:"
+          formControlName="name"
+        />
+        <div
+          class="alert alert-warning"
+          [hidden]="name?.valid || name?.untouched"
+        >
+          <small *ngIf="name?.errors?.['required']" class="color-dange"
+            >Admin name is required.</small
+          >
+          <small *ngIf="name?.errors?.['minLength']" class="color-dange"
+            >Name is too short, Min length is 5 letters.</small
+          >
+          <small *ngIf="name?.errors?.['maxlength']" class="color-dange"
+            >Name is too long , Max length is 12 letters.</small
+          >
+        </div>
+        <!-- Email input -->
+        <input class="form-control input" type="email" placeholder="Email:" formControlName="email"/>
+        <div
+        class="alert alert-warning"
+        [hidden]="email?.valid || email?.untouched"
+      >
+        <small
+          *ngIf="email?.errors?.['required'] || email?.errors?.['untouched']"
+          class="color-dange"
+          >Email is required.</small
+        >
+
+        <small *ngIf="password?.errors?.['email']" class="color-dange"
+          >Email is not valid</small
+        >
+      </div>
+ <!-- password input -->
+        <input
+          class="form-control input"
+          type="password"
+          placeholder="Password:"
+          formControlName="password"
+        />
+        <div
+          class="alert alert-warning"
+          [hidden]="password?.valid || password?.untouched"
+        >
+          <small
+            *ngIf="password?.errors?.['required'] || password?.errors?.['untouched']"
+            class="color-dange"
+            >Password is required.</small
+          >
+
+          <small *ngIf="password?.errors?.['minLength']" class="color-dange"
+            >Password is too short , Min length is 8 letters.</small
+          >
+        </div>
+
+         <!-- confirm password input -->
+        <input
+          class="form-control input"
+          type="password"
+          placeholder="Confirm password:"
+          formControlName="confirmPassword"
+        />
+        <div
+          class="alert alert-warning"
+          [hidden]="confirmPassword?.valid || confirmPassword?.untouched"
+        >
+          <small
+            *ngIf="confirmPassword?.errors?.['required'] || confirmPassword?.errors?.['untouched']"
+            class="color-dange"
+            >Confirm password is required.</small
+          >
+
+          <small *ngIf="confirmPassword?.errors?.['mustMatch']" class="color-dange"
+            >Confirm password dont match</small
+          >
+        </div>
+<!-- activatoin form  input -->
+        <input
+          class="form-control input"
+          type="text"
+          placeholder="Admin activation code:*"
+          formControlName="adminActivationCode"
+        />
+        <div
+        class="alert alert-warning"
+        [hidden]="adminActivationCode?.valid || adminActivationCode?.untouched"
+      >
+        <small
+          *ngIf="adminActivationCode?.errors?.['required'] || adminActivationCode?.errors?.['untouched']"
+          class="color-dange"
+          >Admin activation code  is required.</small
+        >
+
+       
+      </div>
+
+
+        <div class="info">
+          <small style="margin:0.3rem 0 ;"
+            >* Its code with the main admin only.</small
+          >
+          <a style="margin:0.3rem 0 ;" routerLink="/log-in"
+            >Already have account?</a
+          >
+        </div>
+
+        <input type="submit" class="btn btn-primary m-auto " value="Register" />
+      </form>
+    </div>
+    <img
+      class="col-lg-6 col-sm-12 p-0 m-0"
+      src="assets/images/reg.jpg"
+      alt=""
+    />
+  </div>
+</div>

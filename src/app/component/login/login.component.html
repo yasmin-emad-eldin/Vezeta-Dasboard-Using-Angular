@@ -1,0 +1,343 @@
+<!-- <div class="row m-0">
+  <div class="col-4"></div>
+  <div class="col-4">
+
+  <form [formGroup]="usrFormGroup" (ngSubmit)="userLogin()" class="m-2">
+
+    <div class="mb-3">
+      <label for="usrEmail" class="form-label">Email</label>
+      <input type="email" class="form-control" name="usrEmail" id="usrEmail" formControlName="email">
+      <div class="alert alert-warning" [hidden]="email?.valid || email?.untouched">
+
+        <small *ngIf="email?.errors?.['required']">
+          email is required
+        </small>
+      </div>
+
+    </div>
+    <div class="mb-3">
+      <label for="usrPass" class="form-label">Password</label>
+      <input type="password" class="form-control" name="usrPass" id="usrPass" formControlName="password">
+      <div class="alert alert-warning" [hidden]="email?.valid || email?.untouched">
+        <small *ngIf="email?.errors?.['required']">
+          email is required
+        </small>
+
+      </div>
+
+    </div>
+
+
+  <br>
+    <button type="submit" class="btn btn-success"[disabled]="isuserLogged" >login</button>
+    <button class="btn btn-danger" (click)="userLogout()" [disabled]="!isuserLogged">Logout</button>
+
+  </form>
+</div>
+<div class="col-4"></div>
+</div>
+ -->
+ <!-- <div class="container-fluid">
+<div class="row">
+  <div class="col-12">
+<section class="">
+
+  <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+    <div class="container">
+      <div class="row gx-lg-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h1 class="my-5 display-3 fw-bold ls-tight">
+            The best website <br />
+            <span class="text-primary">for your healthy life <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9H1.475ZM.879 8C-2.426 1.68 4.41-2 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.88Z"/>
+            </svg></span>
+          </h1>
+          <p style="color: hsl(217, 10%, 50.8%)">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+            quibusdam tempora at cupiditate quis eum maiores libero
+            veritatis? Dicta facilis sint aliquid ipsum atque?
+          </p>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card">
+            <div class="card-body py-5 px-md-5">
+              <form [formGroup]="usrFormGroup" (ngSubmit)="userLogin()" class="m-2">
+
+                <div class="form-outline mb-4">
+                  <label for="usrEmail" class="form-label">Email address</label>
+                  <input type="email"   class="form-control" name="usrEmail" id="usrEmail" formControlName="email"/>
+                  <div class="alert alert-warning" [hidden]="email?.valid || email?.untouched">
+
+                    <small *ngIf="email?.errors?.['required']">
+                      email is required
+                    </small>
+                  </div>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label for="usrPass" class="form-label">Password</label>
+                  <input type="password" id="form3Example4" class="form-control" />
+                  <div class="alert alert-warning" [hidden]="email?.valid || email?.untouched">
+                    <small *ngIf="email?.errors?.['required']">
+                      email is required
+                    </small>
+
+                  </div>
+                </div>
+
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                  <label class="form-check-label" for="form2Example33">
+                 rember me </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block mb-4 ml-5"[disabled]="isuserLogged" >
+                  Sign up
+                </button>
+                <button type="button" class="btn btn-primary btn-block mr-5 mb-4"[disabled]="!isuserLogged" (click)="userLogout()">
+                  log out
+                </button>
+                <div class="text-center">
+                  <p>or sign up with:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-github"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+  </div>
+</div>
+</div>  -->
+<!-- ////////////////////1//////////////// -->
+    <app-nav-bar></app-nav-bar>
+
+<div class="container-fluid "style="background-color: hsl(0, 0%, 96%)">
+  <div class="row">
+  </div>
+  <div class="row">
+    <div class="col-12">
+  <section class="">
+
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+      <div class="container-fluid">
+        <div class="row gx-lg-5 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="my-5 display-3 fw-bold ls-tight">
+              The best website <br />
+              <span class="text-primary">for your healthy life <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9H1.475ZM.879 8C-2.426 1.68 4.41-2 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.88Z"/>
+              </svg></span>
+            </h1>
+            <p style="color: hsl(217, 10%, 50.8%)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+              quibusdam tempora at cupiditate quis eum maiores libero
+              veritatis? Dicta facilis sint aliquid ipsum atque?
+            </p>
+          </div>
+
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body py-5 px-md-5">
+                <form [formGroup]="usrFormGroup" (ngSubmit)="userLogin1()" class="m-2">
+
+                  <div class="mb-3">
+                    <label for="usrEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="usrEmail" id="usrEmail" formControlName="adminEmail">
+                    <!-- <div class="alert alert-warning" [hidden]="email?.valid || email?.untouched">
+
+                      <small *ngIf="email?.errors?.['required']">
+                        email is required
+                      </small>
+                    </div> -->
+
+                  </div>
+                  <div class="mb-3">
+                    <label for="usrPass" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="usrPass" id="usrPass" formControlName="password">
+                    <!-- <div class="alert alert-warning" [hidden]="email?.valid || email?.untouched">
+                      <small *ngIf="email?.errors?.['required']">
+                        email is required
+                      </small>
+
+                    </div> -->
+
+                  </div>
+
+
+                <br>
+                <div class="row">
+                  <div class="col-5"></div>
+                  <div class="col-3"><button type="submit" class="btn btn-primary ml-5 pl-5 btn-lg" >login</button>
+                  </div>
+                  <!-- <div class="col-3"><button class="btn btn-primary mr-5" (click)="userLogout()" [disabled]="!isuserLogged">Logout</button>
+                  </div> -->
+                </div>
+                  <div class="text-center">
+                    <p>or sign up with:</p>
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-google"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-github"></i>
+                    </button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+    </div>
+  </div>
+  </div>
+<!-- //////////////////////////////////////2///////////////////////////////////////////////////////////// -->
+<!-- <div class="container-fluid "style="background-color: hsl(0, 0%, 96%)">
+  <div class="row">
+  </div>
+  <div class="row">
+    <div class="col-12">
+  <section class="">
+
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+      <div class="container-fluid">
+        <div class="row gx-lg-5 align-items-center"> -->
+          <!-- <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="my-5 display-3 fw-bold ls-tight">
+              The best website <br />
+              <span class="text-primary">for your healthy life <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9H1.475ZM.879 8C-2.426 1.68 4.41-2 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.88Z"/>
+              </svg></span>
+            </h1>
+            <p style="color: hsl(217, 10%, 50.8%)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+              quibusdam tempora at cupiditate quis eum maiores libero
+              veritatis? Dicta facilis sint aliquid ipsum atque?
+            </p>
+          </div> -->
+
+          <!-- <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body py-5 px-md-5">
+                <form [formGroup]="usrFormGroup" (ngSubmit)="userLogin1()" class="m-2">
+
+                  <div class="mb-3">
+                    <label for="usrEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="usrEmail" id="usrEmail" formControlName="adminEmail"> -->
+                    <!-- <div class="alert alert-warning" [hidden]="email?.valid || email?.untouched">
+
+                      <small *ngIf="email?.errors?.['required']">
+                        email is required
+                      </small>
+                    </div> -->
+
+                  <!-- </div>
+                  <div class="mb-3">
+                    <label for="usrPass" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="usrPass" id="usrPass" formControlName="password"> -->
+                    <!-- <div class="alert alert-warning" [hidden]="email?.valid || email?.untouched">
+                      <small *ngIf="email?.errors?.['required']">
+                        email is required
+                      </small>
+
+                    </div> -->
+
+                  <!-- </div>
+
+
+                <br>
+                <div class="row">
+                  <div class="col-3"></div>
+                  <div class="col-3"><button type="submit" class="btn btn-primary ml-5" (click)="userLogin1()">login</button>
+                  </div> -->
+                  <!-- <div class="col-3"><button class="btn btn-primary mr-5" (click)="userLogout()" [disabled]="!isuserLogged">Logout</button>
+                  </div> -->
+                <!-- </div> -->
+                  <!-- <div class="text-center">
+                    <p>or sign up with:</p>
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-google"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-github"></i>
+                    </button>
+                  </div> -->
+
+                <!-- </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+    </div>
+  </div>
+  </div>
+  <div>
+    <h2
+      *ngFor="
+        let data of arrayOfDigits | paginate: { itemsPerPage: 1, currentPage: pages }">
+      {{ data }}
+    </h2>
+  </div>
+  
+  
+  
+  <pagination-controls (click)="pageid(pages)" (pageChange)="pages = $event"></pagination-controls>
+
+  
+  <h6 *ngFor="let item of doctor">
+    <p>{{item.doctorName.englishName}}</p>
+    <p>{{item.doctorLocation}}</p>
+    <p>{{item.profileStatus}}</p>
+    <p>{{item.doctorSpecialization.specialization_english}}</p> -->
+
+    <!-- <p>{{item.doctorClinics[0].clinicAppointment[0].time1}}</p> -->
+    <!-- <p>{{item.doctorClinics[0].clinicAppointment[0].day1}}</p> -->
+  <!-- </h6> -->

@@ -1,0 +1,303 @@
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- <div class="container emp-profile">
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-img mb-5 rounded-left ">
+                            <img class="rounded-left" src={{doctorProfile.profileImagePath}} alt=""/>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="profile-head "  style="margin-top: 60px;">
+                                    <h5>
+										{{doctorProfile.doctorName.englishName}}
+                                    </h5>
+                                    <h6>
+                                       Doctor
+                                    </h6>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+                    </div>
+                </div>
+                <div class="row">
+                 
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab d-flex justify-content-center" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>profile Status</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{doctorProfile.profileStatus}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>doctor Email</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{doctorProfile.doctorEmail}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>doctor Gender</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{doctorProfile.doctorGender}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>doctor Specialization</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{doctorProfile.doctorSpecialization.specialization_english}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>doctor Location</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{doctorProfile.doctorLocation}}</p>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="col-md-6">
+                                                <label>fees</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{doctorProfile.fees}}</p>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="col-md-6">
+                                                <label>entity</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>{{doctorProfile.entity}}</p>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="col-md-6">
+                                                <label>certificateImagePath</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>                            <img class="rounded-left" src={{doctorProfile.certificateImagePath}} alt=""/>
+                                                </p>                                            </div>
+                                        </div>
+                                
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>           
+       </div> -->
+        <!--  <div class="container mt-5 mb-5">
+    
+            <div class="row d-flex justify-content-center">
+                
+                <div class="col-md-10">
+                    
+                    <div class="card p-3 py-4">
+                        
+                        <div class="text-center">
+                            <img src={{doctorProfile.profileImagePath}} width="200" class="rounded-circle">
+                        </div>
+                        
+                        <div class="text-center mt-3">
+                            <h5 class="mt-2 mb-0">{{doctorProfile.doctorName.englishName}}</h5>
+                            <span>doctors details</span>
+                            
+                            <div class="px-4 mt-1">
+                                <p class="fonts">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="social-list mb-0">
+                                        <li>profile Status</li>
+                                       
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                       
+                                        <li style="color: #000000">{{doctorProfile.profileStatus}}</li>
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                        <li>doctor Email</li>
+                                        
+                                    </ul><ul class="social-list">
+                                        
+                                        <li style="color: #000000">{{doctorProfile.doctorEmail}}</li>
+                                    </ul><ul class="social-list mb-0">
+                                    </ul><ul class="social-list">
+                                        <li>doctor Gender</li>
+                                        
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                        
+                                        <li style="color: #000000">{{doctorProfile.doctorGender}}</li>
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                        <li>doctor Specialization</li>
+                                       
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                       
+                                        <li style="color: #000000">{{doctorProfile.doctorSpecialization.specialization_english}}</li>
+                                    </ul>
+                                </div> 
+                                <div class="col-6">
+                                    <ul class="social-list mb-0">
+                                        <li>doctor Location</li>
+                                       
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                       
+                                        <li style="color: #000000">{{doctorProfile.doctorLocation}}</li>
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                        <li>fees</li>
+                                       
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                       
+                                        <li style="color: #000000">{{doctorProfile.fees}}</li>
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                        <li>entity</li>
+                                        
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                        
+                                        <li style="color: #000000">{{doctorProfile.entity}}</li>
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                        <li>certificateImagePath</li>
+                                        
+                                    </ul>
+                                    <ul class="social-list mb-0">
+                                        
+                                        <li style="color: #000000"> <img class="rounded-left" src={{doctorProfile.certificateImagePath}} alt=""/></li>
+                                    </ul>
+                                </div> 
+                            </div>
+                             
+                            
+                            
+                            <div class="">
+                                <button class="btn btn-success px-4 ms-3" (click)="editedoctors(doctorProfile._id)">                        <i class="fa fa-check"></i></button>
+
+                                <button class="btn btn-danger px-4 ms-3" (click)="deletedoctors(doctorProfile._id)" > <i class="fas fa-times"></i></button>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                       
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div> -->
+        <!-- ////////////////////////////////////////////////////////////////// -->
+        <div class="row d-flex justify-content-evenly m-0 mt-5 mb-5"style=" width: 90%;padding-left: 10%;margin-right:0% !important;" >
+            <div class="col col-lg-12 mb-4 mb-lg-0  p-0">
+              <div class="card mb-3 d-flex justify-content-center" style="border-radius: .5rem; height:100%;">
+                <div class="row g-0 d-flex justify-content-center" style="height: 100%;">
+                  <div class="col-md-4 gradient-custom text-center text-white"
+                    style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;height:100%;">
+                    <img src={{doctorProfile.profileImagePath}}
+                      alt="Avatar" class="img-fluid my-5" style="width: 150px;border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; " />
+                    <h5></h5>
+                    <p>{{doctorProfile.doctorName.englishName}}</p>
+                    <i class="far fa-edit mb-5"></i>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body p-4">
+                      <h6>Information</h6>
+                      <hr class="mt-0 mb-4">
+                      <div class="row pt-1">
+                        <div class="col-6 mb-3">
+                          <h6> Status</h6>
+                          <p class="text-muted">{{doctorProfile.profileStatus}}</p>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <h6> Email</h6>
+                          <p class="text-muted">{{doctorProfile.doctorEmail}}</p>
+                        </div>
+                      </div>
+                      <hr class="mt-0 mb-4">
+                      <div class="row pt-1">
+                        <div class="col-6 mb-3">
+                          <h6> Gender</h6>
+                          <p class="text-muted">{{doctorProfile.doctorGender}}</p>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <h6> Specialization</h6>
+                          <p class="text-muted">{{doctorProfile.doctorSpecialization.specialization_english}}</p>
+                        </div>
+                      </div>
+                      <hr class="mt-0 mb-4">
+                      <div class="row pt-1">
+                        <div class="col-6 mb-3">
+                          <h6>Location</h6>
+                          <p class="text-muted">{{doctorProfile.doctorLocation}}</p>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <h6>Fees</h6>
+                          <p class="text-muted">{{doctorProfile.fees}}</p>
+                        </div>
+                      </div>
+                      <hr class="mt-0 mb-4">
+                      <div class="row pt-1">
+                        <div class="col-6 mb-3">
+                          <h6>Entity</h6>
+                          <p class="text-muted">{{doctorProfile.entity}}</p>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <h6>Certification</h6>
+                          <p class="text-muted">   <img class="rounded-left" src={{doctorProfile.certificateImagePath}} alt="" style="width:200px;;"/></p>
+                        </div>
+                      </div>
+                      <hr class="mt-0 mb-4">
+                      <div class="row pt-1">
+                        <div class="col-6 mb-3">
+                          <h6></h6>
+                          <p class="text-muted"> <button class="btn btn-success px-4 ms-3" (click)="editedoctors(doctorProfile._id)"> <i class="fa fa-check"></i></button></p>
+                        </div>
+                        <div class="col-6 mb-3">
+                          <h6></h6>
+                          <p class="text-muted"><button class="btn btn-danger px-4 ms-3 " (click)="deletedoctors(doctorProfile._id)" > <i class="fas fa-times"></i></button></p>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          

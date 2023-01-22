@@ -1,0 +1,90 @@
+<div class="container d-flex ">
+	<div class="card mt-3 " style="width:1140px ;">
+		<div class="input-group mb-3">
+			<input type="text" class="form-control"[(ngModel)]="term" >
+			<div class="input-group-append"><button class="btn btn-primary"><i class="fas fa-search"></i></button></div>
+		</div>
+		<span class="text mb-4"> pending doctor data</span>
+    <div class="d-flex flex-row justify-content-between mb-3">
+			<div class="d-flex flex-column p-3 justify-content-center" style="width:100% ;">
+        <div class="card shadow-2-strong" style="background-color: #f5f7fa62; width: 100%">
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-borderless mb-0">
+                <thead>
+                  <tr>
+
+                    <th scope="col">ID</th>
+                    <th scope="col">DOCTORS</th>
+                    <th scope="col">COUNTRY</th>
+                    <th scope="col">STATUS</th>
+                    <th scope="col">SPECIALIZATION </th>
+                    <th scope="col">DETAIlS</th>
+                    <th scope="col">ACCEPT</th>
+                    <th scope="col">DELETES</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of doctor | filter: term ,let i=index" >
+
+                    <td>{{i+1}}</td>
+                    <td>{{item.doctorName.englishName}}</td>
+                    <td>{{item.doctorLocation}}</td>
+                    <td ><span class="badge badge-warning">{{item.profileStatus}}</span></td>
+                    <td class="text-wrap">{{item.doctorSpecialization.specialization_english}}</td>
+
+                    <td>
+                      <p
+                        type="button"
+                        class="btn btn-primary btn-sm px-3">
+                        <i class="fa fa-exclamation-circle"
+                        (click)="showSingleDoctor(item._id)"></i>  
+                    </p>
+                    </td><td>
+                      <button
+                        type="button"
+                        class="btn btn-success btn-sm px-3"
+                        (click)="editedoctors(item._id)">
+                        <i class="fa fa-check"></i>
+
+                      </button>
+                    </td><td>
+                      <button
+                        type="button"
+                        class="btn btn-danger btn-sm px-3"
+                        (click)="deletedoctors(item._id)"  >
+                        <i class="fas fa-times"></i>
+
+                      </button>
+                    </td>
+                    <!-- <td>
+                      <button
+                        type="button"
+                        class="btn btn-danger btn-sm px-3"
+                        (click)="deletedoctors(user.id)">
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </td> -->
+                  </tr>
+                  <tr>
+                    <th scope="row" *ngFor="
+                    let data of arrayOfDigits | paginate: { itemsPerPage: 1, currentPage: pages }"></th>
+                    <td colspan="1"></td>
+                    <td colspan="6">     <pagination-controls (click)="pageid(pages)" (pageChange)="pages = $event"></pagination-controls>
+                    </td>
+                  </tr>
+                </tbody>
+                
+                
+              </table>
+            </div>
+          </div>
+        </div>
+        
+			</div>
+
+		</div>
+
+	</div>
+</div>
